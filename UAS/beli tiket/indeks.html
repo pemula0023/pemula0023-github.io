@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pemesanan Tiket Konser</title>
+    <link rel="stylesheet" href="styles2.css">
+    
+</head>
+<body>
+    <div id="app">
+        <h1>Pemesanan Tiket Konser</h1>
+        <h2>The Neighbourhood</h2>
+        <button onclick="tampilkanFormPemesanan()">Buat Pemesanan</button>
+
+        <div id="formPemesanan" style="display:none;">
+            <label for="namaPembeli">Nama Pembeli:</label>
+            <input type="text" id="namaPembeli">
+
+            <label for="jumlahTiket">Jumlah Tiket:</label>
+            <input type="number" id="jumlahTiket">
+
+            <label for="jenisTiket">Jenis Tiket:</label>
+            <select id="jenisTiket">
+                <option value="vip">VIP</option>
+                <option value="reguler">Reguler</option>
+            </select>
+            <br><br>
+
+            <button onclick="buatPemesanan()">Pesan</button>
+            <h2>Daftar Transaksi</h2>
+            <ul id="daftarTransaksi"></ul>
+            
+            <div id="adminPage" style="display:none;">
+                <h2>Halaman Admin</h2>
+                <button onclick="tampilkanTransaksiAdmin()">Lihat Transaksi</button>
+                <ul id="transaksiAdmin"></ul>
+            </div>
+        </div>    
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

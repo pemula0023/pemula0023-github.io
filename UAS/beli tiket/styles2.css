@@ -1,0 +1,89 @@
+/* styles.css */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 20px;
+    background-image: url(backgound.jpg);
+    background-position-x: center;
+}
+
+#app {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;   
+    
+}
+
+#app:hover {
+    transform: scale(1.02);    
+}
+
+h1, h2 {
+    color: #000000;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    color: #ffffff;    
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+input:focus, select:focus {
+    border-color: #797979;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: rgb(71, 71, 71);
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color:#000000;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+li {
+    margin-bottom: 5px;
+    padding: 12px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+li:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#adminPage {
+    margin-top: 20px;
+}
+
+#transaksiAdmin {
+    margin-top: 10px;
+}
